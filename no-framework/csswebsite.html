@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(8, 108, 11);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: rgb(8, 150, 11);
+        }
+        body {
+            background-color: rgb(166, 242, 192);
+        }
+
+        .greenbox {
+            border-left: 10px solid rgb(19, 136, 44);
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 30px;
+            }
+        .yellowbox {
+            border-left: 10px solid rgb(226, 224, 102);;
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 30px;
+        }
+
+        .containercontent {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+        }
+
+        li.dropdown {
+        display: inline-block;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(8, 150, 11);
+            min-width: 100x;
+            box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+            padding: 5px 5px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+        
+    </style>
+    
+    
+</head>
+<body>
+    <ul>
+
+            <li class = dropdown><a>File</a>
+            <div class="dropdown-content">
+                <a href="">New</a>
+                <a href="">Open</a>
+                <a href="">Save</a>
+                <a href="">Print</a>
+                <a href="">Close</a>
+            </div>
+        </li>
+
+        
+        <div class="dropdown">
+            <li><a>Edit</a></li>
+            <div class="dropdown-content">
+                <li><a href="">Undo</a></li>
+                <li><a href="">Redo</a></li>
+                <li><a href="">Cut</a></li>
+                <li><a href="">Copy</a></li>
+                <li><a href="">Paste</a></li>
+                <li><a href="">Delete</a></li>
+                <li><a href="">Select All</a></li>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <li><a>View</a></li>
+            <div class="dropdown-content">
+                <a href="">New</a>
+                <a href="">Open</a>
+                <a href="">Save</a>
+                <a href="">Print</a>
+                <a href="">Close</a>
+            </div>
+        </div>
+      </ul>
+
+    <div class = "containercontent">
+        <div class = "greenbox">
+            <h2>Instructions</h2>
+            <p>This is where the Instructions are</p>
+          </div> 
+        <div class = "yellowbox">
+            <h2>Extra Credit</h2>
+            <p>This is where the Extra Credit is</p>
+        </div>
+    </div>
+</body>
+</html>
