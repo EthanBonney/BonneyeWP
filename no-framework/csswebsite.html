@@ -8,29 +8,7 @@
     <style>
         
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: rgb(8, 108, 11);
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            padding: 20px 20px;
-            text-decoration: none;
-        }
-
-        li a:hover {
-            background-color: rgb(8, 150, 11);
-        }
+       
         body {
             background-color: rgb(166, 242, 192);
         }
@@ -53,11 +31,24 @@
             margin: 0 auto;
         }
 
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(8, 108, 11);
+        }
+
+        li {
+            float: left;
+        }
+
+        
         li a, .dropbtn {
         display: inline-block;
-        color: white;
+        color: rgb(0, 0, 0);
         text-align: center;
-        padding: 14px 16px;
+        padding: 15px 15px;
         text-decoration: none;
         }
 
@@ -69,20 +60,25 @@
         display: inline-block;
         }
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+       
 
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: rgb(8, 150, 11);
             min-width: 100x;
-            box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
             padding: 5px 5px;
             z-index: 1;
         }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
 
         .dropdown:hover .dropdown-content {
         display: block;
@@ -94,8 +90,7 @@
 </head>
 <body>
     <ul>
-
-            <li class = dropdown><a>File</a>
+            <li class = dropdown><a><b>File</b></a>
             <div class="dropdown-content">
                 <a href="">New</a>
                 <a href="">Open</a>
@@ -106,21 +101,19 @@
         </li>
 
         
-        <div class="dropdown">
-            <li><a>Edit</a></li>
+        <li class = dropdown><a>Edit</a>
             <div class="dropdown-content">
-                <li><a href="">Undo</a></li>
-                <li><a href="">Redo</a></li>
-                <li><a href="">Cut</a></li>
-                <li><a href="">Copy</a></li>
-                <li><a href="">Paste</a></li>
-                <li><a href="">Delete</a></li>
-                <li><a href="">Select All</a></li>
+                <a href="">Undo</a>
+                <a href="">Redo</a>
+                <a href="">Cut</a>
+                <a href="">Copy</a>
+                <a href="">Paste</a>
+                <a href="">Delete</a>
+                <a href="">Select All</a>
             </div>
         </div>
 
-        <div class="dropdown">
-            <li><a>View</a></li>
+        <li class = dropdown><a><b>View</b></a>
             <div class="dropdown-content">
                 <a href="">New</a>
                 <a href="">Open</a>
@@ -134,11 +127,11 @@
     <div class = "containercontent">
         <div class = "greenbox">
             <h2>Instructions</h2>
-            <p>This is where the Instructions are</p>
+            <p>Recreate this page using <b><i>only CSS.</i></b> Do yourself a favor and 1) Do not view the source. Figure it out yourself. 2) Do not search for the solution. Learn CSS until you know enough to do this.</p>
           </div> 
         <div class = "yellowbox">
             <h2>Extra Credit</h2>
-            <p>This is where the Extra Credit is</p>
+            <p>Notice how the Edit menu (besides for not being bold) reacts to clicks. If you click the edit menu, it remains open until you click somewhere else. (This you might need to search for)</p>
         </div>
     </div>
 </body>
