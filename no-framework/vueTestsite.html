@@ -76,17 +76,20 @@
 
       <div class ="container content">
         <div class = "hero pink">
+          <div class = hero-body>
         <h1>Bulma Testsite</h1>
         <h3>Learning Bulma</h3>
       </div>
-      
-      <div class ="notification is-success is-light" v-if="m.isVisible">
-        <button class = "delete" @click="m.isVisible = false"></button>
-        {{ m.text }}
-      </div>
     </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+      
+      
+      <div v-for="m in messages" class="notification is-success is-light" v-show="m.isVisible">
+        <button class="delete" @click="m.isVisible = false" ></button>
+        {{ m.text }} 
+    </div>
+  </div>
+  
 <script type = "module">
   import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
 
@@ -96,10 +99,10 @@ createApp({
       message: 'Hello Vue!',
       isNotificationVisible: true,
       isMenuOpen: false, 
-      messages: [{ text: "This class is awesome", isVisile: true},
-      { text: "This class is awesome2", isVisile: true},
-      { text: "This class is awesome3", isVisile: true},
-      { text: "This class is awesome4", isVisile: true}
+      messages: [{ text: "This class is awesome", isVisible: true},
+      { text: "This class is awesome2", isVisible: true},
+      { text: "This class is awesome3", isVisible: true},
+      { text: "This class is awesome4", isVisible: true}
 
     ]
     }
@@ -112,5 +115,5 @@ createApp({
   }
 ).mount('body');
 </script>
-  </body>
+</body>
 </html>
