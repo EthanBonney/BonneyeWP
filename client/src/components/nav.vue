@@ -1,5 +1,6 @@
-<script>
+<script  setup lang="ts">
 import {ref} from 'vue';
+import { RouterLink } from 'vue-router';
 
     let isActive =ref(false)
 </script>
@@ -12,7 +13,7 @@ import {ref} from 'vue';
             <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
           </a>
       
-          <a class="{ 'is-active': isActive}" @click="isActive =!isActive" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a :class="{ 'is-active': isActive }" @click="isActive = !isActive" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
