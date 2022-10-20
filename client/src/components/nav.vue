@@ -1,6 +1,7 @@
 <script  setup lang="ts">
 import {ref} from 'vue';
 import { RouterLink } from 'vue-router';
+import login from './Login.vue'
 
     let isActive =ref(false)
 </script>
@@ -9,8 +10,7 @@ import { RouterLink } from 'vue-router';
 <template>
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          
-      
+                
           <a :class="{ 'is-active': isActive }" @click="isActive = !isActive" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -48,17 +48,9 @@ import { RouterLink } from 'vue-router';
       
           <div class="navbar-end">
             <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
+              <login></login>
             </div>
           </div>
         </div>
       </nav>
-
 </template>
