@@ -9,9 +9,7 @@ import { RouterLink } from 'vue-router';
 <template>
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-          </a>
+          
       
           <a :class="{ 'is-active': isActive }" @click="isActive = !isActive" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
@@ -22,33 +20,28 @@ import { RouterLink } from 'vue-router';
       
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item">
-              Home
-            </a>
+            <router-link to="/user" class="navbar-item">
+              Your Workouts
+            </router-link>
       
-            <a class="navbar-item">
-              Documentation
-            </a>
+            <router-link to="/" class="navbar-item">
+              Friends Workouts
+            </router-link>
+
+            <router-link to="/stats" class="navbar-item">
+              Stats
+            </router-link>
       
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
-                More
+                Admin
               </a>
       
               <div class="navbar-dropdown">
                 <a class="navbar-item">
-                  About
+                  Users
                 </a>
-                <a class="navbar-item">
-                  Jobs
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item">
-                  Report an issue
-                </a>
+                
               </div>
             </div>
           </div>

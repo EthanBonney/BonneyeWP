@@ -9,12 +9,16 @@
 
 <template>
   <div class="Workouts">
-    <h1>Workouts</h1>
+    <h1 class = "title">Friends Workouts</h1>
+    <div>
+    <p>
     <ul>
       <li v-for="item in items" :key="item.name">
       {{item.name}} lenghts {{item.cost}}
       </li>
     </ul>
+  </p>
+</div>
   </div>
 </template>
 

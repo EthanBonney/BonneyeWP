@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import NavVue from './components/nav.vue';
-import WorkoutsView from './views/WorkoutsView.vue';
+
 </script>
 
 <template>
@@ -11,10 +11,10 @@ import WorkoutsView from './views/WorkoutsView.vue';
   </header>
 
   <div class="container">
-    <WorkoutsView />
+    <RouterView />
   </div>
 
-  <RouterView />
+  
 </template>
 
 <style scoped>
