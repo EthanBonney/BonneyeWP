@@ -13,9 +13,9 @@
     <div class="media-content">
       <div class="content">
         <p>
-          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+          <strong>Persons Name</strong> <small>@user</small> <small>31m</small>
           <br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+          Description
         </p>
       </div>
       <nav class="level is-mobile">
@@ -42,4 +42,7 @@
 </div>
 </template>
 <style scoped>
+
+
+
 </style>

@@ -1,12 +1,12 @@
 <script setup lang ="ts">
 import workout from '../components/Workout.vue'
-  
+import session, { login, logout } from '../stores/Users'
 </script>
 
 <template>
   <div class="Workouts">
     <h1 class = "title">Friends Workouts</h1>
-    <div>
+    <div >
     <workout></workout>
     </div>
   </div>

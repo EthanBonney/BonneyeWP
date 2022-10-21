@@ -5,7 +5,7 @@
 <template>
     <div class="buttons" v-if="session.user == null">
         
-        <a class="button is-light" @click="login('Ethan', 'Bonney')">
+        <a class="button is-light" @click="login('Ethan', 'Bonney', '1234')">
             Log in
         </a>
     </div>
