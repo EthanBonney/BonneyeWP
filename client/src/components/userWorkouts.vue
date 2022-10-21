@@ -4,7 +4,7 @@
 
 <template>
 
-<button class="button is-large is-fullwidth is-primary is-rounded">Add Workout</button>
+
 
 <br>
     <div class="box">

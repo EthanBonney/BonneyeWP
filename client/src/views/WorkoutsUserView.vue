@@ -6,7 +6,10 @@ import session  from '../stores/Users'
 <template>
   <div class="Workouts">
     <h1 class = "title">Your Workouts</h1>
-    <div >
+    <div>
+    <button class="button is-large is-fullwidth is-primary is-rounded">
+      <router-link to="/add" class="button is-large is-fullwidth is-primary is-rounded">Add Workout</router-link>
+    </button>
     <userWorkout></userWorkout>
     </div>
   </div>
