@@ -1,6 +1,6 @@
 <script setup lang ="ts">
 import workout from '../components/Workout.vue'
-import session, { login, logout } from '../stores/Users'
+import session  from '../stores/Users'
 </script>
 
 <template>

@@ -38,9 +38,9 @@ import login from './Login.vue'
               </a>
       
               <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  Users
-                </a>
+                <router-link to="/usersview" class="navbar-item">
+              Users
+            </router-link>
                 
               </div>
             </div>
